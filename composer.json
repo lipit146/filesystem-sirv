@@ -1,0 +1,43 @@
+{
+    "name": "lipit146/filesystem-sirv",
+    "description": "A Laravel filesystem driver for Sirv Images",
+    "keywords": ["laravel", "Sirv", "images", "Sirv Images"],
+    "type": "library",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lipit146/filesystem-sirv"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2|^8.3",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/http": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lipit146\\FilesystemSirv\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lee Peace",
+            "email": "songviytuong@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lipit146\\FilesystemSirv\\FilesystemSirvImagesServiceProvider"
+            ]
+        }
+    }
+}
